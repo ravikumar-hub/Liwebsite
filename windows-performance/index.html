@@ -6,10 +6,10 @@
 <meta name="theme-color" content="#0b1020">
 <title>Windows Performance Center</title>
 <style>
-:root{color-scheme:dark;--bg:#090e1b;--panel:#111a2d;--line:#25334c;--muted:#9aa9c0;--text:#eef4ff;--blue:#75a7ff;--green:#62d6a5;--amber:#f3c979}
+:root{color-scheme:dark;--bg:#090e1b;--line:#25334c;--muted:#9aa9c0;--text:#eef4ff;--blue:#75a7ff;--green:#62d6a5;--amber:#f3c979}
 *{box-sizing:border-box}
 body{margin:0;min-height:100vh;background:radial-gradient(ellipse at 15% 0%,#1c3158 0,transparent 40%),radial-gradient(ellipse at 100% 20%,#173b37 0,transparent 34%),var(--bg);font:16px/1.55 system-ui,-apple-system,"Segoe UI",sans-serif;color:var(--text)}
-.wrap{width:min(960px,calc(100% - 32px));margin:0 auto;padding:30px 0 60px}
+.wrap{width:min(920px,calc(100% - 32px));margin:auto;padding:30px 0 60px}
 .top{display:flex;justify-content:space-between;align-items:center;gap:16px;margin-bottom:56px}
 .brand{display:flex;align-items:center;gap:12px;font-weight:700;letter-spacing:.02em}
 .mark{display:grid;place-items:center;width:42px;height:42px;border:1px solid #3c5d8b;border-radius:13px;background:#172944;color:var(--blue);font-weight:800}
@@ -24,9 +24,8 @@ h2{font-size:23px;margin:0 0 8px}
 .muted{color:var(--muted)}
 .ver{font-size:12px;color:#c8d9f4;border:1px solid #334967;border-radius:9px;padding:6px 9px;white-space:nowrap}
 .actions{display:flex;flex-wrap:wrap;gap:12px;margin:25px 0 16px}
-.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;text-decoration:none;font-weight:750;border-radius:12px;padding:14px 19px;min-height:50px}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;text-decoration:none;font-weight:750;border-radius:12px;padding:14px 19px;min-height:52px}
 .primary{background:var(--green);color:#071a17}
-.secondary{border:1px solid #3a4c68;color:#dbe8fa;background:#15233a}
 .btn:hover{filter:brightness(1.08);transform:translateY(-1px)}
 .small{font-size:13px;color:var(--muted)}
 .grid{display:grid;grid-template-columns:repeat(3,1fr);gap:13px;margin-top:22px}
@@ -54,48 +53,47 @@ a:focus-visible{outline:3px solid #fff;outline-offset:3px}
   <section class="hero">
     <div class="eyebrow">Performance profile</div>
     <h1>A cleaner way to tune your Windows PC.</h1>
-    <p class="sub">Download the Windows 11 performance profile and open its simple launcher. Preview the changes, apply them with Administrator approval, verify after restart, or roll them back.</p>
+    <p class="sub">A straightforward Windows 11 performance package with preview, apply, verification and recovery options.</p>
   </section>
 
   <section class="card" aria-labelledby="download-title">
     <div class="cardhead">
       <div>
         <h2 id="download-title">Windows 11 Performance Profile</h2>
-        <div class="muted">One-click launcher · Reversible settings · Local backups</div>
+        <div class="muted">Simple launcher · Local backups · Recovery option</div>
       </div>
       <span class="ver">v4 · Modern UI</span>
     </div>
 
     <div class="actions">
-      <a class="btn primary" href="https://github.com/ravikumar-hub/win11-performance-profile/archive/refs/heads/main.zip">↓ Download package (ZIP)</a>
-      <a class="btn secondary" href="https://github.com/ravikumar-hub/win11-performance-profile">View private repository ↗</a>
+      <a class="btn primary" href="https://github.com/ravikumar-hub/win11-performance-profile/archive/refs/heads/main.zip" rel="noopener noreferrer">↓ Download Windows Performance Tool</a>
     </div>
-    <p class="small">The download is hosted in a private GitHub repository. Sign in with a GitHub account that has access to the repository before downloading.</p>
+    <p class="small">The download is access-controlled. Use an account that has permission to retrieve the package.</p>
 
     <div class="grid">
-      <div class="tile"><span class="num">01</span><b>Preview first</b><p>Review the intended changes before applying anything.</p></div>
-      <div class="tile"><span class="num">02</span><b>Apply locally</b><p>Run the launcher and approve the Windows UAC prompt.</p></div>
-      <div class="tile"><span class="num">03</span><b>Verify or restore</b><p>Check after reboot or roll back using that PC's backup.</p></div>
+      <div class="tile"><span class="num">01</span><b>Preview first</b><p>Review planned changes before applying anything.</p></div>
+      <div class="tile"><span class="num">02</span><b>Apply locally</b><p>Approve the Windows Administrator prompt to continue.</p></div>
+      <div class="tile"><span class="num">03</span><b>Verify or restore</b><p>Check after restart or restore the backup created on that PC.</p></div>
     </div>
 
-    <div class="notice"><strong>Important:</strong> This is an aggressive profile, not a universal FPS guarantee. Review the preview on each PC. Processor boost can increase heat and fan noise. The profile does not disable Intel thermal or firmware safety protections.</div>
+    <div class="notice"><strong>Important:</strong> This is an aggressive profile, not a universal FPS guarantee. Review the preview on every PC. Processor boost can increase heat and fan noise. Thermal and firmware safety protections remain enabled.</div>
   </section>
 
   <section class="steps">
     <h2>How to use it</h2>
     <ol>
-      <li>Sign in to GitHub with an account that has access to the private repository.</li>
-      <li>Download the ZIP package and extract all files to a folder.</li>
-      <li>Double-click <strong>START-Windows-Performance.cmd</strong>.</li>
-      <li>Approve the Administrator prompt and choose <strong>1 — Preview settings</strong>.</li>
-      <li>Only after reviewing the preview, choose <strong>2 — Apply performance profile</strong>.</li>
-      <li>After restarting, run the launcher again and choose Verify. Use Rollback to restore the saved baseline on that same PC.</li>
+      <li>Download the package and extract all files into one folder.</li>
+      <li>Open the launcher in the extracted folder.</li>
+      <li>Approve the Administrator prompt.</li>
+      <li>Choose <strong>Preview settings</strong> and review the proposed changes.</li>
+      <li>Choose <strong>Apply performance profile</strong> only when you are ready.</li>
+      <li>After restarting, use Verify. Use Rollback to restore the original settings saved on that same PC.</li>
     </ol>
   </section>
 
   <footer>
-    <span>Windows Performance Center · Static download page</span>
-    <span>The launcher runs locally. It does not upload PC data.</span>
+    <span>Windows Performance Center</span>
+    <span>The package operates locally. PC backups remain on that PC.</span>
   </footer>
 </main>
 </body>
